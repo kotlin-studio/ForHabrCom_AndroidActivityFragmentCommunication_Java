@@ -15,7 +15,7 @@ import android.widget.Toast;
 /**
  * Fragment1 subclass.
  */
-public class Fragment1 extends Fragment implements View.OnClickListener, Postman  {
+public class Fragment1 extends Fragment implements View.OnClickListener  {
 
     public int counter = 0;
     Activity activity;
@@ -49,8 +49,5 @@ public class Fragment1 extends Fragment implements View.OnClickListener, Postman
             ((Postman) activity).fragmentMail(counter);
         } catch (ClassCastException ignored) {}
     }
-
-    @Override
-    public void fragmentMail(int numberOfClicks) { }
 
 }
